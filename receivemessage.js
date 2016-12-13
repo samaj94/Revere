@@ -10,7 +10,7 @@ exports.receiveMessage = function(req, res, parseCallback) {
             console.log("Received body data:", obj);
             parseCallback(obj);
         });
-
+        //This is a test
         req.on("end", function() {
             // empty 200 OK response for now
             res.writeHead(200, "OK", {"Content-Type": "text/html"});
